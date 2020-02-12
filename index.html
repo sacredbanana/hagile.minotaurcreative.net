@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" type="text/css" href="golStyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-63993761-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body>
+
+    <!-- Heading Container -->
+    <div class="container">
+        <h1 id="head">Conway's Game of Life</h1>
+    </div>
+    <!--##########################-->
+
+    <div id="canvasCont">
+        <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+    </div>
+
+
+    <script src="gameOfLife3.js"></script>
+    <br>
+
+    <div class="sect2">
+    <hr class="style14">
+
+
+    <!-- Information section list with images -->
+    <div class="infoSect">
+
+        <h4>The Rules</h4>
+        <ul id="list" style="font-size:14px">
+            <li>Any live cell with fewer than two live neighbours dies</li>
+            <li>Any live cell with two or three live neighbours lives on to the next generation</li>
+            <li>Any live cell with more than three live neighbours dies</li>
+            <li>Any dead cell with exactly three live neighbours becomes a live cell (coloured purple)</li>
+            <br>
+
+            <li style="font-size: 12px">refresh page to start another unique game</li>
+            <br>
+            <br>
+
+        </ul>
+
+        <div class="imageSect">
+
+            <h2 id="patternHead">Some distinct patterns you should look out for:</h2>
+
+
+            <div class = "item">
+                <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/0/07/Game_of_life_pulsar.gif" alt="Pulsar pattern found in Conway's Game of Life">
+                <span class="caption">Pulsar</span>
+            </div>
+
+            <div class = "item">
+                <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Game_of_life_animated_glider.gif" alt="Glider">
+                <span class="caption">Glider</span>
+            </div>
+
+            <div class = "item">
+                <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Game_of_life_animated_LWSS.gif" alt="Lightweight Spaceship">
+                <span class="caption">Lightweight Spaceship (LWSS)</span>
+            </div>
+
+            <div class = "item">
+                <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif" alt="Gosper's Glider Gun">
+                <span class="caption">Gosper's Glider Gun creating "gliders"</span>
+            </div>
+
+            <br>
+            <h3><a id="wikiLinks" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" title="Conway's Game of Life" target="_blank">See the wiki</a></h3>
+        </div>
+
+
+    </div>
+        <div>
+
+            <footer>
+                <p>Harrison's implementation of Conway's Game of Life</p>
+            </footer>
+    <!--#########################################-->
+</body>
+
+</html>
